@@ -33,3 +33,17 @@ console.log("Customer List:");
 for (let customer of customers) {
     console.log(customer)
 };
+
+//Task 5: Object Methods
+let order = {
+    orderId: 153,
+    customerName: "Sophia",
+    amount: 5.64,
+    calculateTax: function() {
+        return this.amount*0.1;},
+};
+console.log("Order details:");
+console.log(`Order ID: ${order.orderId}`);
+console.log(`Customer Name: ${order.customerName}`);
+console.log(`Amount: $${order.amount}`);
+console.log(`Tax amount: ${order.calculateTax()}`);
