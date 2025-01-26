@@ -21,3 +21,15 @@ let employee = {
 employee.department = "HR";
 employee.position = "HR Assistant";
 console.log(employee);
+
+//Task 4: Array of Objects
+let customers = [
+    {name: "Alice Johnson", email: "alice.johnson@example.com", purchaseAmount: 250},
+    {name: "Bob Smith", email: "bob.smith@example.com", purchaseAmount: 150},
+    {name: "Charlie Brown", email: "charlie.brown@example.com", purchaseAmount: 300}
+];
+customers.push({name: "Diana Prince", email: "diana.prince@example.com", purchaseAmount: 400});
+console.log("Customer List:");
+for (let customer of customers) {
+    console.log(customer)
+};
